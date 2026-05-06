@@ -11,15 +11,15 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"/>
   <style>
     :root {
-      --surface-0: #071220;
-      --surface-1: #141f31;
-      --surface-2: #1b2739;
+      --surface-0: #1c130f;
+      --surface-1: #2a1b16;
+      --surface-2: #35241d;
       --border: rgba(255,255,255,.11);
-      --accent-1: rgb(255,165,120);
-      --accent-2: rgb(120,200,255);
-      --text-1: #f4f8ff;
-      --text-2: rgba(228,236,248,.88);
-      --text-muted: rgba(201,212,228,.66);
+      --accent-1: rgb(214,161,93);
+      --accent-2: rgb(143,191,159);
+      --text-1: #fff7ec;
+      --text-2: rgba(248,235,216,.88);
+      --text-muted: rgba(231,211,186,.66);
       --shadow-xl: 0 18px 40px rgba(0,0,0,.34);
     }
 
@@ -30,8 +30,9 @@
       font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       color: var(--text-1);
       background:
-        radial-gradient(circle at 18% -4%, rgba(242,162,119,.09), transparent 22%),
-        radial-gradient(circle at 82% 38%, rgba(120,200,255,.07), transparent 24%),
+        radial-gradient(circle at 18% -4%, rgba(214,161,93,.18), transparent 24%),
+        radial-gradient(circle at 82% 38%, rgba(143,191,159,.10), transparent 26%),
+        radial-gradient(circle at 50% 110%, rgba(112,67,45,.26), transparent 36%),
         linear-gradient(180deg, var(--surface-0), var(--surface-0));
       overflow-x: hidden;
       padding-top: 82px;
@@ -47,7 +48,7 @@
       left: 0;
       right: 0;
       z-index: 1000;
-      background: linear-gradient(90deg, rgba(4,12,26,.94), rgba(9,25,43,.94) 58%, rgba(16,32,52,.94));
+      background: linear-gradient(90deg, rgba(28,19,15,.95), rgba(50,31,22,.95) 58%, rgba(66,43,29,.95));
       border-bottom: 1px solid rgba(255,255,255,.09);
       box-shadow: 0 10px 28px rgba(0,0,0,.24);
       backdrop-filter: blur(12px);
@@ -76,9 +77,9 @@
       border-radius: 14px;
       display: grid;
       place-items: center;
-      color: #071220;
+      color: #1c130f;
       background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
-      box-shadow: 0 10px 24px rgba(120,200,255,.18);
+      box-shadow: 0 10px 24px rgba(214,161,93,.2);
     }
 
     .brand-name {
@@ -92,7 +93,7 @@
 
     .brand-subtitle {
       display: block;
-      color: rgba(201,212,228,.72);
+      color: rgba(231,211,186,.72);
       font-size: .74rem;
       letter-spacing: .08em;
       text-transform: uppercase;
@@ -142,14 +143,14 @@
 
     .nav-link--primary {
       background: linear-gradient(135deg, var(--accent-1), #e08050);
-      color: #0c1624;
-      box-shadow: 0 10px 24px rgba(255,165,120,.18);
+      color: #1c130f;
+      box-shadow: 0 10px 24px rgba(214,161,93,.2);
     }
 
     .nav-link--primary:hover,
     .nav-link--primary:focus {
-      background: linear-gradient(135deg, #ffc29e, var(--accent-1));
-      color: #0c1624;
+      background: linear-gradient(135deg, #f1c48d, var(--accent-1));
+      color: #1c130f;
     }
 
     .about-hero {
@@ -158,9 +159,9 @@
       padding: 80px 0 70px;
       text-align: center;
       background:
-        radial-gradient(ellipse at 16% 0%, rgba(255,165,120,.24), transparent 36%),
-        radial-gradient(ellipse at 84% 95%, rgba(120,200,255,.2), transparent 38%),
-        linear-gradient(180deg, #040c1a 0%, #071422 60%, #0b1c2e 100%);
+        radial-gradient(ellipse at 16% 0%, rgba(214,161,93,.34), transparent 38%),
+        radial-gradient(ellipse at 84% 95%, rgba(143,191,159,.22), transparent 40%),
+        linear-gradient(180deg, #26140f 0%, #2c1a14 58%, #3b281f 100%);
     }
 
     .about-hero::before {
@@ -169,10 +170,10 @@
       inset: 0;
       pointer-events: none;
       background-image:
-        linear-gradient(to right, rgba(255,165,120,.2) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(255,165,120,.2) 1px, transparent 1px),
-        linear-gradient(to right, rgba(120,200,255,.28) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(120,200,255,.28) 1px, transparent 1px);
+        linear-gradient(to right, rgba(214,161,93,.22) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(214,161,93,.22) 1px, transparent 1px),
+        linear-gradient(to right, rgba(143,191,159,.2) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(143,191,159,.2) 1px, transparent 1px);
       background-size: 24px 24px, 24px 24px, 120px 120px, 120px 120px;
       opacity: .65;
     }
@@ -192,12 +193,12 @@
       text-transform: uppercase;
       letter-spacing: .11em;
       font-weight: 700;
-      color: rgba(120,200,255,.95);
+      color: rgba(170,215,181,.95);
       margin-bottom: 14px;
       padding: 7px 14px;
       border-radius: 999px;
-      border: 1px solid rgba(120,200,255,.35);
-      background: rgba(9,19,33,.52);
+      border: 1px solid rgba(143,191,159,.38);
+      background: rgba(38,20,15,.58);
     }
 
     .about-hero h1 {
@@ -216,6 +217,62 @@
       font-size: clamp(1rem, 1.4vw, 1.12rem);
       line-height: 1.7;
       color: rgba(230,240,255,.88);
+    }
+
+    .hero-slogan {
+      margin: 18px auto 0;
+      width: fit-content;
+      max-width: min(760px, calc(100% - 32px));
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(214,161,93,.34);
+      background: rgba(38,20,15,.55);
+      color: rgba(255,247,236,.94);
+      font-weight: 700;
+      letter-spacing: .01em;
+      box-shadow: 0 12px 30px rgba(0,0,0,.18);
+    }
+
+    .quote-section {
+      padding: 24px 0 18px;
+    }
+
+    .quote-callout {
+      margin: 0 auto;
+      max-width: 860px;
+      padding: 18px 20px;
+      border: 1px solid rgba(214,161,93,.24);
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(214,161,93,.13), rgba(143,191,159,.06));
+      color: rgba(255,247,236,.94);
+      font-size: clamp(1.02rem, 1.35vw, 1.18rem);
+      line-height: 1.55;
+      text-align: center;
+    }
+
+    .quote-callout blockquote {
+      margin: 0;
+      font-weight: 800;
+    }
+
+    .quote-callout cite {
+      display: block;
+      margin-top: 8px;
+      color: var(--text-muted);
+      font-size: .9rem;
+      font-style: normal;
+      font-weight: 600;
+    }
+
+    .passion-line {
+      margin: 18px 0 0;
+      padding: 16px 18px;
+      border-radius: 16px;
+      border: 1px solid rgba(143,191,159,.24);
+      background: rgba(143,191,159,.07);
+      color: rgba(248,235,216,.95);
+      font-weight: 700;
+      line-height: 1.62;
     }
 
     section { padding: 62px 0; }
@@ -268,6 +325,126 @@
 
     .list-item i { color: var(--accent-1); margin-top: 2px; }
 
+    .client-panel {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .client-panel::after {
+      content: "";
+      position: absolute;
+      inset: auto -20% -45% 45%;
+      height: 180px;
+      background: radial-gradient(circle, rgba(143,191,159,.12), transparent 62%);
+      pointer-events: none;
+    }
+
+    .client-logo-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .client-logo {
+      min-height: 86px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,.1);
+      background:
+        linear-gradient(160deg, rgba(255,247,236,.07), rgba(255,247,236,.025)),
+        rgba(0,0,0,.08);
+      color: rgba(255,247,236,.92);
+      box-shadow: 0 10px 22px rgba(0,0,0,.18);
+      text-align: center;
+    }
+
+    .client-logo span {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      line-height: 1;
+      letter-spacing: .02em;
+    }
+
+    .logo-intel span {
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: #8fbf9f;
+      border: 2px solid rgba(143,191,159,.7);
+      border-radius: 999px;
+      padding: 6px 18px 7px;
+      letter-spacing: -.05em;
+    }
+
+    .logo-cisco span {
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: #d6a15d;
+      text-transform: lowercase;
+      letter-spacing: .05em;
+    }
+
+    .logo-amdocs span {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: #fff7ec;
+      letter-spacing: -.03em;
+    }
+
+    .logo-nice span {
+      font-size: 1.45rem;
+      font-weight: 900;
+      color: #8fbf9f;
+      letter-spacing: .12em;
+    }
+
+    .logo-checkpoint span {
+      flex-direction: column;
+      gap: 4px;
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: #fff7ec;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .logo-kodak span {
+      font-size: 1.45rem;
+      font-weight: 900;
+      color: #1c130f;
+      background: #d6a15d;
+      padding: 8px 16px;
+      border-radius: 6px;
+      letter-spacing: .04em;
+    }
+
+    .logo-bank span {
+      font-size: 1.08rem;
+      font-weight: 800;
+      color: #fff7ec;
+    }
+
+    .logo-weizmann span {
+      font-size: 1rem;
+      font-weight: 700;
+      color: rgba(248,235,216,.94);
+      line-height: 1.2;
+    }
+
+    .logo-idf span {
+      font-size: 1.45rem;
+      font-weight: 900;
+      color: #8fbf9f;
+      letter-spacing: .14em;
+    }
+
     .tools-row {
       display: flex;
       gap: 10px;
@@ -282,9 +459,9 @@
       min-height: 34px;
       padding: 0 14px;
       border-radius: 999px;
-      border: 1px solid rgba(120,200,255,.35);
-      background: rgba(120,200,255,.1);
-      color: rgba(225,240,255,.95);
+      border: 1px solid rgba(143,191,159,.38);
+      background: rgba(143,191,159,.1);
+      color: rgba(224,243,229,.95);
       font-weight: 700;
       font-size: .86rem;
       letter-spacing: .02em;
@@ -320,8 +497,8 @@
       margin-top: 14px;
       padding: 18px 20px;
       border-radius: 16px;
-      background: linear-gradient(135deg, rgba(255,165,120,.1), rgba(120,200,255,.08));
-      border: 1px solid rgba(255,165,120,.24);
+      background: linear-gradient(135deg, rgba(214,161,93,.13), rgba(143,191,159,.08));
+      border: 1px solid rgba(214,161,93,.26);
     }
 
     .vision-strip ul {
@@ -339,10 +516,10 @@
       padding: 13px 26px;
       border-radius: 999px;
       background: linear-gradient(135deg, var(--accent-1), #e08050);
-      color: #0c1624;
+      color: #1c130f;
       font-weight: 800;
       font-size: .93rem;
-      box-shadow: 0 10px 24px rgba(255,165,120,.24);
+      box-shadow: 0 10px 24px rgba(214,161,93,.24);
     }
 
     .site-footer {
@@ -378,6 +555,12 @@
       color: var(--accent-2);
     }
 
+    .footer-section h3 a {
+      display: inline;
+      color: var(--accent-2);
+      margin-bottom: 0;
+    }
+
     .footer-section a {
       display: block;
       color: var(--text-2);
@@ -403,7 +586,7 @@
         display: none;
         padding: 14px;
         border-radius: 18px;
-        background: rgba(7,18,32,.98);
+        background: rgba(28,19,15,.98);
         border: 1px solid rgba(255,255,255,.1);
         box-shadow: 0 18px 40px rgba(0,0,0,.34);
         justify-content: flex-start;
@@ -411,6 +594,7 @@
       .main-nav.is-open { display: flex; }
       .nav-link { width: 100%; justify-content: center; }
       .principles { grid-template-columns: 1fr 1fr; }
+      .client-logo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .list-grid { grid-template-columns: 1fr; }
       .footer-grid { grid-template-columns: 1fr; }
     }
@@ -419,6 +603,7 @@
       .brand-subtitle { display: none; }
       .about-hero { padding: 64px 0 58px; }
       .principles { grid-template-columns: 1fr; }
+      .client-logo-grid { grid-template-columns: 1fr; }
       .about-panel { padding: 22px 16px; }
     }
   </style>
@@ -440,7 +625,6 @@
         <a class="nav-link" href="#consulting">Consulting Roots</a>
         <a class="nav-link" href="#computing">Statistical Computing</a>
         <a class="nav-link" href="#vision">Vision</a>
-        <a class="nav-link" href="https://statistico.live/Statistico-Website/about-us.html">About Statistico</a>
         <a class="nav-link nav-link--primary" href="contact.html">
           <i class="fa-solid fa-envelope"></i>
           Contact
@@ -450,15 +634,27 @@
   </header>
 
   <main>
+    <section class="quote-section" aria-label="Measurement quote">
+      <div class="container">
+        <div class="quote-callout">
+          <blockquote>"What's measured, improves."</blockquote>
+          <cite>Peter Drucker</cite>
+        </div>
+      </div>
+    </section>
+
     <section class="about-hero">
       <div class="about-hero-inner container">
         <div class="page-kicker"><i class="fa-solid fa-building"></i> About Us</div>
         <h1>From Practice to Reinvention</h1>
         <p>
-          Metrics Institute built Statistico™ from decades of applied quantitative work.
+          Metrics Institute built <a href="https://statistico.live/Statistico-Website/index.html">Statistico™</a> from decades of applied quantitative work.
           This page explains where we come from, why we challenged legacy statistical workflows,
           and what we are building now.
         </p>
+        <div class="hero-slogan">
+          Metrics Institute, the company behind <a href="https://statistico.live/Statistico-Website/index.html">Statistico™</a>
+        </div>
       </div>
     </section>
 
@@ -468,7 +664,7 @@
           <div class="section-head">
             <h2>Consulting roots</h2>
             <p>
-              Metrics Institute is a boutique consulting agency with more than 30 years of hands-on experience
+              Metrics Institute is an Israeli boutique consulting agency with more than 30 years of hands-on experience
               helping organizations embed quantitative thinking in real decisions.
             </p>
           </div>
@@ -476,6 +672,9 @@
             Our work has always focused on practical operational problems, not abstract theory.
             Across industries, we designed and implemented measurement systems that teams actually use.
           </p>
+          <div class="passion-line">
+            We are passionate about helping companies clarify, focus, and engage through state-of-the-art organizational surveys and measurement systems.
+          </div>
           <div class="list-grid">
             <div class="list-item"><i class="fa-solid fa-check"></i><span>Employee surveys and behavioral measurement frameworks.</span></div>
             <div class="list-item"><i class="fa-solid fa-check"></i><span>KPI systems for mission-critical business processes.</span></div>
@@ -483,6 +682,31 @@
             <div class="list-item"><i class="fa-solid fa-check"></i><span>Ranking and scoring systems for complex evaluations.</span></div>
             <div class="list-item"><i class="fa-solid fa-check"></i><span>Large-scale analysis pipelines turning data into action.</span></div>
             <div class="list-item"><i class="fa-solid fa-check"></i><span>Training programs for management teams using quantitative methods.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="organizations">
+      <div class="container">
+        <div class="about-panel client-panel">
+          <div class="section-head">
+            <h2>Selected organizations we've worked with</h2>
+            <p>
+              Our consulting work has supported leading technology companies, financial institutions,
+              research organizations, and public-sector teams.
+            </p>
+          </div>
+          <div class="client-logo-grid" aria-label="Selected organizations Metrics Institute has worked with">
+            <div class="client-logo logo-intel"><span>intel</span></div>
+            <div class="client-logo logo-cisco"><span>Cisco</span></div>
+            <div class="client-logo logo-amdocs"><span>Amdocs</span></div>
+            <div class="client-logo logo-nice"><span>NICE</span></div>
+            <div class="client-logo logo-checkpoint"><span>Check Point</span></div>
+            <div class="client-logo logo-kodak"><span>KODAK</span></div>
+            <div class="client-logo logo-bank"><span>Bank Hapoalim</span></div>
+            <div class="client-logo logo-weizmann"><span>Weizmann Institute</span></div>
+            <div class="client-logo logo-idf"><span>IDF</span></div>
           </div>
         </div>
       </div>
@@ -518,7 +742,7 @@
       <div class="container">
         <div class="about-panel">
           <div class="section-head">
-            <h2>The turning point and the birth of Statistico™</h2>
+            <h2>The turning point and the birth of <a href="https://statistico.live/Statistico-Website/index.html">Statistico™</a></h2>
             <p>
               We asked a simple question: what would statistical computing look like if it were designed today
               for analysts, decision-makers, and learners, not for legacy workflow constraints?
@@ -580,10 +804,10 @@
             and building tools that redefine how statistics is used.
           </p>
           <p>
-            With Statistico™, we bring our consulting DNA into a platform and place that way of thinking directly in users' hands.
+            With <a href="https://statistico.live/Statistico-Website/index.html">Statistico™</a>, we bring our consulting DNA into a platform and place that way of thinking directly in users' hands.
           </p>
           <div class="cta-wrap">
-            <a class="cta-btn" href="https://statistico.live/Statistico-Website/how-it-works.html">
+            <a class="cta-btn" href="https://statistico.live/Statistico-Website/index.html">
               <i class="fa-solid fa-circle-play"></i>
               See how Statistico™ works
             </a>
@@ -599,18 +823,17 @@
         <div class="footer-section">
           <h2 class="footer-title">Metrics Institute</h2>
           <p class="footer-copy">
-            Quantitative consulting, measurement systems, statistical computing, and the team behind Statistico™.
+            Quantitative consulting, measurement systems, statistical computing, and the team behind <a href="https://statistico.live/Statistico-Website/index.html">Statistico™</a>.
           </p>
         </div>
         <div class="footer-section">
-          <h3>Statistico</h3>
+          <h3><a href="https://statistico.live/Statistico-Website/index.html">Statistico</a></h3>
           <a href="https://statistico.live/Statistico-Website/index-Analytics.html">Analytics Hub</a>
           <a href="https://statistico.live/Statistico-Website/index-Calculators.html">Calculators Hub</a>
           <a href="https://statistico.live/Statistico-Website/index-Addins.html">Applications Hub</a>
         </div>
         <div class="footer-section">
           <h3>Company</h3>
-          <a href="https://statistico.live/Statistico-Website/about-us.html">About Statistico</a>
           <a href="contact.html">Contact</a>
           <a href="https://statistico.live/Statistico-Website/terms-and-conditions.html">Terms &amp; Conditions</a>
         </div>
