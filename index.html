@@ -382,10 +382,12 @@
     }
 
     .client-logo {
-      min-height: 86px;
+      min-height: 104px;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
+      gap: 10px;
       padding: 16px;
       border-radius: 18px;
       border: 1px solid rgba(255,255,255,.1);
@@ -397,85 +399,22 @@
       text-align: center;
     }
 
+    .client-logo img {
+      width: 64px;
+      height: 64px;
+      object-fit: contain;
+      border-radius: 14px;
+      background: rgba(255,255,255,.92);
+      padding: 9px;
+      box-shadow: 0 8px 18px rgba(0,0,0,.18);
+    }
+
     .client-logo span {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 36px;
-      line-height: 1;
-      letter-spacing: .02em;
-    }
-
-    .logo-intel span {
-      font-size: 1.55rem;
-      font-weight: 700;
-      color: #8fbf9f;
-      border: 2px solid rgba(143,191,159,.7);
-      border-radius: 999px;
-      padding: 6px 18px 7px;
-      letter-spacing: -.05em;
-    }
-
-    .logo-cisco span {
-      font-size: 1.45rem;
+      color: rgba(255,247,236,.88);
+      font-size: .84rem;
       font-weight: 800;
-      color: #d6a15d;
-      text-transform: lowercase;
-      letter-spacing: .05em;
-    }
-
-    .logo-amdocs span {
-      font-size: 1.35rem;
-      font-weight: 800;
-      color: #fff7ec;
-      letter-spacing: -.03em;
-    }
-
-    .logo-nice span {
-      font-size: 1.45rem;
-      font-weight: 900;
-      color: #8fbf9f;
-      letter-spacing: .12em;
-    }
-
-    .logo-checkpoint span {
-      flex-direction: column;
-      gap: 4px;
-      font-size: 1.1rem;
-      font-weight: 800;
-      color: #fff7ec;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-    }
-
-    .logo-kodak span {
-      font-size: 1.45rem;
-      font-weight: 900;
-      color: #1c130f;
-      background: #d6a15d;
-      padding: 8px 16px;
-      border-radius: 6px;
-      letter-spacing: .04em;
-    }
-
-    .logo-bank span {
-      font-size: 1.08rem;
-      font-weight: 800;
-      color: #fff7ec;
-    }
-
-    .logo-weizmann span {
-      font-size: 1rem;
-      font-weight: 700;
-      color: rgba(248,235,216,.94);
       line-height: 1.2;
-    }
-
-    .logo-idf span {
-      font-size: 1.45rem;
-      font-weight: 900;
-      color: #8fbf9f;
-      letter-spacing: .14em;
+      letter-spacing: .01em;
     }
 
     .tools-row {
@@ -744,15 +683,19 @@
             </p>
           </div>
           <div class="client-logo-grid" aria-label="Selected organizations Metrics Institute has worked with">
-            <div class="client-logo logo-intel"><span>intel</span></div>
-            <div class="client-logo logo-cisco"><span>Cisco</span></div>
-            <div class="client-logo logo-amdocs"><span>Amdocs</span></div>
-            <div class="client-logo logo-nice"><span>NICE</span></div>
-            <div class="client-logo logo-checkpoint"><span>Check Point</span></div>
-            <div class="client-logo logo-kodak"><span>KODAK</span></div>
-            <div class="client-logo logo-bank"><span>Bank Hapoalim</span></div>
-            <div class="client-logo logo-weizmann"><span>Weizmann Institute</span></div>
-            <div class="client-logo logo-idf"><span>IDF</span></div>
+            <div class="client-logo"><img src="https://www.google.com/s2/favicons?domain=intel.com&sz=128" alt="Intel logo" loading="lazy" referrerpolicy="no-referrer" /><span>Intel</span></div>
+            <div class="client-logo"><img src="https://www.google.com/s2/favicons?domain=cisco.com&sz=128" alt="Cisco logo" loading="lazy" referrerpolicy="no-referrer" /><span>Cisco</span></div>
+            <div class="client-logo"><img src="https://www.google.com/s2/favicons?domain=amdocs.com&sz=128" alt="Amdocs logo" loading="lazy" referrerpolicy="no-referrer" /><span>Amdocs</span></div>
+            <div class="client-logo"><img src="https://www.google.com/s2/favicons?domain=nice.com&sz=128" alt="NICE logo" loading="lazy" referrerpolicy="no-referrer" /><span>NICE</span></div>
+            <div class="client-logo"><img src="https://www.google.com/s2/favicons?domain=checkpoint.com&sz=128" alt="Check Point logo" loading="lazy" referrerpolicy="no-referrer" /><span>Check Point</span></div>
+            <div class="client-logo"><img src="https://www.google.com/s2/favicons?domain=kodak.com&sz=128" alt="Kodak logo" loading="lazy" referrerpolicy="no-referrer" /><span>Kodak</span></div>
+            <div class="client-logo"><img src="https://www.google.com/s2/favicons?domain=bankhapoalim.com&sz=128" alt="Bank Hapoalim logo" loading="lazy" referrerpolicy="no-referrer" /><span>Bank Hapoalim</span></div>
+            <div class="client-logo"><img src="https://www.google.com/s2/favicons?domain=weizmann.ac.il&sz=128" alt="Weizmann Institute logo" loading="lazy" referrerpolicy="no-referrer" /><span>Weizmann Institute</span></div>
+            <div class="client-logo"><img src="https://www.google.com/s2/favicons?domain=idf.il&sz=128" alt="IDF logo" loading="lazy" referrerpolicy="no-referrer" /><span>IDF</span></div>
+            <div class="client-logo"><img src="https://www.google.com/s2/favicons?domain=netafim.com&sz=128" alt="Netafim logo" loading="lazy" referrerpolicy="no-referrer" /><span>Netafim</span></div>
+            <div class="client-logo"><img src="https://www.google.com/s2/favicons?domain=jfrog.com&sz=128" alt="JFrog logo" loading="lazy" referrerpolicy="no-referrer" /><span>JFrog</span></div>
+            <div class="client-logo"><img src="https://www.google.com/s2/favicons?domain=icl-group.com&sz=128" alt="ICL logo" loading="lazy" referrerpolicy="no-referrer" /><span>ICL</span></div>
+            <div class="client-logo"><img src="https://www.google.com/s2/favicons?domain=elbitsystems.com&sz=128" alt="Elbit Systems logo" loading="lazy" referrerpolicy="no-referrer" /><span>Elbit Systems</span></div>
           </div>
         </div>
       </div>
