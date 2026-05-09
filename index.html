@@ -76,12 +76,12 @@
     }
 
     .brand-mark {
-      width: 72px;
-      height: 46px;
-      border-radius: 16px;
+      width: 168px;
+      height: 62px;
+      border-radius: 20px;
       display: grid;
       place-items: center;
-      padding: 4px;
+      padding: 8px;
       background: #020402;
       border: 1px solid rgba(217,255,35,.34);
       box-shadow: 0 10px 24px rgba(217,255,35,.16), inset 0 0 0 1px rgba(255,255,255,.05);
@@ -106,7 +106,7 @@
 
     .brand-subtitle {
       display: block;
-      color: rgba(231,211,186,.72);
+      color: rgba(255,255,255,.72);
       font-size: .74rem;
       letter-spacing: .08em;
       text-transform: uppercase;
@@ -644,6 +644,14 @@
     }
 
     @media (max-width: 700px) {
+      .brand { gap: 8px; }
+      .brand-mark {
+        width: 132px;
+        height: 52px;
+        border-radius: 18px;
+        padding: 7px;
+      }
+      .brand-name { font-size: .96rem; }
       .brand-subtitle { display: none; }
       .about-hero { padding: 64px 0 58px; }
       .principles { grid-template-columns: 1fr; }
@@ -657,7 +665,7 @@
     <div class="header-inner container">
       <a class="brand" href="/" aria-label="Metrics Institute home">
         <span class="brand-mark">
-          <img class="brand-logo" src="Logo200.png" alt="" aria-hidden="true" />
+          <img class="brand-logo" src="Logo200-white.png" alt="" aria-hidden="true" />
         </span>
         <span>
           <span class="brand-name">Metrics Institute</span>
@@ -692,9 +700,9 @@
     <section class="about-hero">
       <div class="about-hero-inner container">
         <div class="hero-logo-card">
-          <img src="Logo200.png" alt="Metrics Institute logo" />
+          <img src="Logo200-white.png" alt="Metrics Institute logo" />
         </div>
-        <div class="page-kicker"><img class="page-kicker-logo" src="Logo200.png" alt="" aria-hidden="true" /> About Us</div>
+        <div class="page-kicker"><img class="page-kicker-logo" src="Logo200-white.png" alt="" aria-hidden="true" /> About Us</div>
         <h1>From Practice to Reinvention</h1>
         <p>
           Metrics Institute built <a href="https://statistico.live/Statistico-Website/index.html">Statistico™</a> from decades of applied quantitative work.
